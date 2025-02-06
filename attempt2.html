@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game Registration</title>
+    <link rel="stylesheet" href="attempt2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 class="title"><span class="red">R</span>egister</h1>
+            <form>
+                <label for="event-selection">Select Events<span class="asterisk">*</span></label>
+                <div class="dropdown-checkbox" id="dropdown">
+                    <div class="dropdown-header" id="dropdown-btn">Select Events</div>
+                    <div class="dropdown-content">
+                        <label><input type="checkbox" value="Web Vida"> Web Vida</label>
+                        <label><input type="checkbox" value="Wit Wars"> Wit Wars</label>
+                        <label><input type="checkbox" value="Stalemate"> Stalemate</label>
+                        <label><input type="checkbox" value="Flag Heist"> Flag Heist</label>
+                    </div>
+                    <div id="event-selection-display" class="event-display">None Selected</div>
+                </div>
+
+                <label for="team-size">Number of Team Members<span class="asterisk">*</span></label>
+                <select id="team-size" required>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                
+                <div id="team-details"></div>
+                
+                <label for="leader-name">Team Leader Full Name<span class="asterisk">*</span></label>
+                <input type="text" id="leader-name" placeholder="Enter Team Leader Full Name" required>
+                
+                <label for="leader-email">Team Leader Email<span class="asterisk">*</span></label>
+                <input type="email" id="leader-email" placeholder="Enter Team Leader Email" required>
+                
+                <label for="leader-phone">Team Leader Mobile Number<span class="asterisk">*</span></label>
+                <input type="tel" id="leader-phone" placeholder="Enter Team Leader Mobile Number" required>
+                
+                <label for="leader-roll">Team Leader Roll Number<span class="asterisk">*</span></label>
+                <input type="text" id="leader-roll" placeholder="Enter Team Leader Roll Number" required>
+                
+                <!-- <label for="college">College Name<span class="asterisk">*</span></label>
+                <input type="text" id="college" placeholder="Enter College Name" required> -->
+
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

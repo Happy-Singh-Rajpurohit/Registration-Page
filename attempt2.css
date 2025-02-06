@@ -1,0 +1,129 @@
+body {
+    background: url('squidgame.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-box {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-decoration: underline red;
+}
+
+.red {
+    color: red;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.asterisk {
+    color: red;
+}
+
+input{
+    width: 95%;
+    padding: 10px;  
+    margin-top: 5px;    
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+select{
+    width: 100%;
+    padding: 10px;  
+    margin-top: 5px;
+    /* margin-right: 55px; */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 15px;
+}
+
+.register-btn:hover {
+    background: rgb(128, 2, 2);
+    box-shadow: 0px 0px 10px rgba(206, 4, 4);
+}
+
+.dropdown-checkbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dropdown-header {
+    background: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown-checkbox.active .dropdown-content {
+    display: block;
+}
+
+.event-display {
+    background: #fff;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    min-height: 30px;
+}
