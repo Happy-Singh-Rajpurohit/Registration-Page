@@ -23,29 +23,28 @@ checkboxes.forEach(checkbox => {
 
 function generateTeamFields(size) {
     let container = document.getElementById('team-details');
-    container.innerHTML = '';
+    container.innerHTML = ''; // Clear previous fields
     
     for (let i = 1; i <= size; i++) {
-        let required = i <= 2 ? 'required' : '';
-        
         let memberFields = `
             <div class="member">
-                <label>Member-${i} Full Name ${i <= 2 ? '<span class="asterisk">*</span>' : ''}</label>
-                <input type="text" placeholder="Enter Member-${i} Full Name" ${required}>
+                <label>Member-${i} Full Name <span class="asterisk">*</span></label>
+                <input type="text" placeholder="Enter Member-${i} Full Name" required>
                 
-                <label>Member-${i} Email ${i <= 2 ? '<span class="asterisk">*</span>' : ''}</label>
-                <input type="email" placeholder="Enter Member-${i} Email" ${required}>
+                <label>Member-${i} Email <span class="asterisk">*</span></label>
+                <input type="email" placeholder="Enter Member-${i} Email" required>
                 
-                <label>Member-${i} Roll Number ${i <= 2 ? '<span class="asterisk">*</span>' : ''}</label>
-                <input type="text" placeholder="Enter Member-${i} Roll Number" ${required}>
+                <label>Member-${i} Roll Number <span class="asterisk">*</span></label>
+                <input type="text" placeholder="Enter Member-${i} Roll Number" required>
                 
-                <label>Member-${i} Mobile Number ${i <= 2 ? '<span class="asterisk">*</span>' : ''}</label>
-                <input type="tel" placeholder="Enter Member-${i} Mobile Number" ${required}>
+                <label>Member-${i} Mobile Number <span class="asterisk">*</span></label>
+                <input type="tel" placeholder="Enter Member-${i} Mobile Number" required>
             </div>
         `;
         container.innerHTML += memberFields;
     }
 }
+
 
 document.getElementById('team-size').addEventListener('change', function() {
     generateTeamFields(parseInt(this.value));
